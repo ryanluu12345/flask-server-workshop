@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flask Server</title>
+</head>
+<body>
+
+    <!-- The {{name}} refers to the name parameter that is passed in in the render_template function -->
+    <h3> Your Name is: {{name}}</h3>
+
+    <!-- The form submits a post request to the "handleName" route which is on the backend API -->
+    <form method="post" action="/handleName">
+        <p>Enter your name:</p><br/>
+        <input name="name" type="text"/>
+        <input type="submit"/>
+    </form>
+
+</body>
+</html>
